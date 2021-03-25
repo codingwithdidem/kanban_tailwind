@@ -267,565 +267,194 @@ export default function Home() {
         </div>
 
         <div className="flex-1 overflow-auto">
-          <main className="p-3 inline-flex space-x-2">
-            <div className="flex-shrink-0 p-3 w-80 bg-gray-100 rounded-md">
-              <h3 className="text-sm font-medium text-gray-900">Backlog</h3>
-              <ul className="mt-2">
-                <li>
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
-
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
+          <main className="p-3 h-full overflow-hidden inline-flex space-x-2">
+            <div className="flex-shrink-0 flex flex-col w-80 bg-gray-100 rounded-md">
+              <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-sm font-medium text-gray-700">
+                Backlog
+              </h3>
+              <div className=" flex-1 min-h-0 overflow-y-auto">
+                <ul className="pt-1 pb-3 px-3">
+                  <li>
+                    <a
+                      href="#"
+                      className=" block p-5 rounded-md bg-white shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
                         </span>
                       </div>
-                    </div>
-                  </a>
-                </li>
 
-                <li className="mt-3">
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
+                      <div className="mt-2 flex items-baseline justify-between">
+                        <div className="text-sm text-gray-600">Sep 14</div>
+                        <div className="p-2 flex items-center bg-green-100 rounded">
+                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
+                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
+                            Feature Request
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
 
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className=" block p-5 rounded-md bg-white shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
                         </span>
                       </div>
-                    </div>
-                  </a>
-                </li>
 
-                <li className="mt-3">
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
+                      <div className="mt-2 flex items-baseline justify-between">
+                        <div className="text-sm text-gray-600">Sep 14</div>
+                        <div className="p-2 flex items-center bg-green-100 rounded">
+                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
+                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
+                            Feature Request
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
 
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className=" block p-5 rounded-md bg-white shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
                         </span>
                       </div>
-                    </div>
-                  </a>
-                </li>
 
-                <li className="mt-3">
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
+                      <div className="mt-2 flex items-baseline justify-between">
+                        <div className="text-sm text-gray-600">Sep 14</div>
+                        <div className="p-2 flex items-center bg-green-100 rounded">
+                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
+                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
+                            Feature Request
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
 
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className=" block p-5 rounded-md bg-white shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
                         </span>
                       </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
 
-            <div className="flex-shrink-0 p-3 w-80 bg-gray-100 rounded-md">
-              <h3 className="text-sm font-medium text-gray-900">Backlog</h3>
-              <ul className="mt-2">
-                <li>
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
+                      <div className="mt-2 flex items-baseline justify-between">
+                        <div className="text-sm text-gray-600">Sep 14</div>
+                        <div className="p-2 flex items-center bg-green-100 rounded">
+                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
+                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
+                            Feature Request
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
 
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className=" block p-5 rounded-md bg-white shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
                         </span>
                       </div>
-                    </div>
-                  </a>
-                </li>
 
-                <li className="mt-3">
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
+                      <div className="mt-2 flex items-baseline justify-between">
+                        <div className="text-sm text-gray-600">Sep 14</div>
+                        <div className="p-2 flex items-center bg-green-100 rounded">
+                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
+                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
+                            Feature Request
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
 
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className=" block p-5 rounded-md bg-white shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
                         </span>
                       </div>
-                    </div>
-                  </a>
-                </li>
 
-                <li className="mt-3">
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
-
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
-                        </span>
+                      <div className="mt-2 flex items-baseline justify-between">
+                        <div className="text-sm text-gray-600">Sep 14</div>
+                        <div className="p-2 flex items-center bg-green-100 rounded">
+                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
+                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
+                            Feature Request
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mt-3">
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
-
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mt-3">
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
-
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mt-3">
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
-
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="flex-shrink-0 p-3 w-80 bg-gray-100 rounded-md">
-              <h3 className="text-sm font-medium text-gray-900">Backlog</h3>
-              <ul className="mt-2">
-                <li>
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
-
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mt-3">
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
-
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mt-3">
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
-
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mt-3">
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
-
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="flex-shrink-0 p-3 w-80 bg-gray-100 rounded-md">
-              <h3 className="text-sm font-medium text-gray-900">Backlog</h3>
-              <ul className="mt-2">
-                <li>
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
-
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mt-3">
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
-
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mt-3">
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
-
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mt-3">
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
-
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mt-3">
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
-
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mt-3">
-                  <a href="#" className=" block p-5 rounded-md bg-white shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="w-6 h-6 rounded-full object-cover"
-                          src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                          alt="Avatar"
-                        />
-                      </span>
-                    </div>
-
-                    <div className="mt-2 flex items-baseline justify-between">
-                      <div className="text-sm text-gray-600">Sep 14</div>
-                      <div className="p-2 flex items-center bg-green-100 rounded">
-                        <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                        <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                          Feature Request
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </main>
         </div>
