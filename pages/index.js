@@ -1,9 +1,40 @@
+import React from "react";
+import { useState } from "react";
+
 export default function Home() {
+  const [isOpen, toggleSidebar] = React.useState(false);
   return (
     <div className="h-screen flex">
       {/* Sidebar */}
-      <div className="w-64 px-8 py-4 bg-gray-100 border-r overflow-auto ">
-        <img src="/image/logo.svg" alt="Logo" className="w-9 h-9" />
+      <div
+        className={`fixed lg:static lg:translate-x-0 z-30 inset-y-0 left-0  w-64 px-8 py-4 bg-gray-100 border-r overflow-auto transform ${
+          isOpen
+            ? "translate-x-0 ease-out transition-medium"
+            : "-translate-x-full ease-in transition-medium"
+        }`}
+      >
+        <div className="flex items-center justify-between">
+          <img src="/image/logo.svg" alt="Logo" className="w-9 h-9" />
+          <button
+            className="text-gray-700 lg:hidden"
+            onClick={() => toggleSidebar(false)}
+          >
+            <svg
+              className="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
         <nav className="mt-8">
           <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide">
             Issues
@@ -117,8 +148,27 @@ export default function Home() {
           <header className="px-6">
             <div className="flex justify-between items-center border-b border-gray-200 py-3">
               {/* Searchbar */}
-              <div className="flex-1">
-                <div className="relative w-64">
+              <div className="min-w-0 flex-1 flex">
+                <button
+                  className="text-gray-600 lg:hidden"
+                  onClick={() => toggleSidebar(true)}
+                >
+                  <svg
+                    className="w-6 h-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+                <div className="flex-shrink-1 ml-4 lg:ml-0 relative w-64">
                   <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                     <svg
                       className="w-6 h-6 text-gray-500"
@@ -143,7 +193,7 @@ export default function Home() {
               </div>
 
               {/* Icons */}
-              <div className="flex items-center">
+              <div className="ml-6 flex-shrink-0 flex items-center">
                 <button className="w-6 h-6 text-gray-500">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -171,11 +221,11 @@ export default function Home() {
 
             {/* Header Bottom */}
             <div className=" flex items-center justify-between py-2">
-              <div className="flex items-center">
+              <div className="sm:flex sm:items-center">
                 <h2 className="text-xl font-semibold text-gray-900 leading-tight">
                   All Issues
                 </h2>
-                <div className=" ml-6 flex items-center">
+                <div className="flex items-center sm:ml-6 mt-1 sm:mt-0">
                   <span className="rounded-full border-2 border-white">
                     <img
                       className="w-6 h-6 rounded-full object-cover "
