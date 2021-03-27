@@ -5,9 +5,8 @@ export default function Home() {
   const [isOpen, toggleSidebar] = React.useState(false);
   return (
     <div className="h-screen flex">
-      {/* Sidebar */}
       <div
-        className={`fixed lg:static lg:translate-x-0 z-30 inset-y-0 left-0  w-64 px-8 py-4 bg-gray-100 border-r overflow-auto transform ${
+        className={`fixed lg:static lg:translate-x-0 z-30 inset-y-0 left-0  w-64 px-8 py-4 bg-white border-r overflow-auto transform ${
           isOpen
             ? "translate-x-0 ease-out transition-medium"
             : "-translate-x-full ease-in transition-medium"
@@ -37,41 +36,31 @@ export default function Home() {
         </div>
         <nav className="mt-8">
           <h3 className="text-xs font-semibold text-gray-600 uppercase tracking-wide">
-            Issues
+            SCRUMBOARD
           </h3>
           <div className="mt-2 -mx-3">
             <a
               href="#"
-              className="flex justify-between items-center bg-gray-200 rounded-lg px-3 py-2"
+              className="flex justify-between items-center rounded-lg px-3 py-2"
             >
-              <span className="text-sm font-medium text-gray-900">All</span>
+              <span className="text-sm font-medium text-gray-700">Backlog</span>
               <span className="text-xs font-semibold text-gray-700">36</span>
             </a>
             <a
               href="#"
-              className="flex justify-between items-center rounded-lg px-3 py-2"
+              className="flex justify-between items-center bg-gradient-to-r from-purple-700 to-blue-500 rounded-lg px-3 py-2 "
             >
-              <span className="text-sm font-medium text-gray-700">
-                Assigned to me
+              <span className="text-sm font-medium text-white">
+                Active Sprints
               </span>
-              <span className="text-xs font-semibold text-gray-700">2</span>
+              <span className="text-xs font-semibold text-white">2</span>
             </a>
             <a
               href="#"
               className="flex justify-between items-center rounded-lg px-3 py-2"
             >
-              <span className="text-sm font-medium text-gray-700">
-                Created by me
-              </span>
+              <span className="text-sm font-medium text-gray-700">Reports</span>
               <span className="text-xs font-semibold text-gray-700">1</span>
-            </a>
-            <a
-              href="#"
-              className="flex justify-between items-center rounded-lg px-3 py-2"
-            >
-              <span className="text-sm font-medium text-gray-700">
-                Archived
-              </span>
             </a>
           </div>
 
@@ -122,31 +111,13 @@ export default function Home() {
               <span className="text-sm font-medium text-gray-700">Design</span>
             </a>
           </div>
-          <button className=" -ml-2.5 flex items-center text-sm font-medium text-gray-600 mt-2">
-            <svg
-              className="w-5 h-5 text-gray-500"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-              />
-            </svg>
-
-            <span>New Project</span>
-          </button>
         </nav>
       </div>
 
       <div className="flex-1 min-w-0 flex flex-col bg-white">
-        <div className="flex-shrink-0 border-b-2 border-gray-200">
-          <header className="px-6">
-            <div className="flex justify-between items-center border-b border-gray-200 py-3">
+        <div className="flex-shrink-0">
+          <header className="px-6 border-b border-gray-200">
+            <div className="flex justify-between items-center  py-3">
               {/* Searchbar */}
               <div className="min-w-0 flex-1 flex">
                 <button
@@ -223,7 +194,7 @@ export default function Home() {
             <div className=" flex items-center justify-between py-2">
               <div className="sm:flex sm:items-center">
                 <h2 className="text-xl font-semibold text-gray-900 leading-tight">
-                  All Issues
+                  Assignees
                 </h2>
                 <div className="flex items-center sm:ml-6 mt-1 sm:mt-0">
                   <span className="rounded-full border-2 border-white">
@@ -258,42 +229,10 @@ export default function Home() {
               </div>
 
               <div className="flex items-center">
-                <span className="inline-flex border rounded-md bg-gray-200 p-0.5">
-                  <button className="px-2 py-1 rounded">
-                    <svg
-                      className="w-6 h-6 text-gray-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M4 6h16M4 10h16M4 14h16M4 18h16"
-                      />
-                    </svg>
-                  </button>
-                  <button className="px-2 py-1 bg-white rounded shadow">
-                    <svg
-                      className="w-6 h-6 text-gray-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
-                      />
-                    </svg>
-                  </button>
-                </span>
-
-                <button className="ml-5 flex items-center pl-2 pr-4 py-2 text-sm font-medium text-white bg-gray-800 hover:bg-gray-700 rounded-md">
+                <button className="pl-2 pr-4 py-2 text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 rounded-md">
+                  Complete Sprint
+                </button>
+                <button className="ml-5 flex items-center pl-2 pr-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-purple-700 to-blue-500 hover:from-purple-600 hover:to-blue-400 rounded-md">
                   <svg
                     className="w-5 h-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -309,7 +248,7 @@ export default function Home() {
                     />
                   </svg>
 
-                  <span>New Issue</span>
+                  <span>New Item</span>
                 </button>
               </div>
             </div>
@@ -318,129 +257,132 @@ export default function Home() {
 
         <div className="flex-1 overflow-auto">
           <main className="p-3 h-full overflow-hidden inline-flex space-x-2">
-            {/* Board Todo */}
             <div className="flex-shrink-0 flex flex-col w-80 bg-gray-100 rounded-md">
-              <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-sm font-medium text-gray-700">
-                Backlog
+              <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-md font-medium text-gray-700 leading-tight font-mono">
+                Todo
               </h3>
               <div className=" flex-1 min-h-0 overflow-y-auto">
                 <ul className="pt-1 pb-3 px-3">
-                  <li className="mt-3">
+                  <li className="mt-1">
                     <a
                       href="#"
                       className=" block p-5 rounded-md bg-white shadow"
                     >
-                      <div className="flex justify-between">
-                        <p className="text-sm font-medium text-gray-900 leading-snug">
-                          Add discount code to checkout page
+                      <div className="flex items-baseline justify-between">
+                        <div className="px-3 py-1 bg-blue-200 rounded">
+                          <span className="text-sm font-medium text-blue-500 leading-tight">
+                            DESIGN
+                          </span>
+                        </div>
+                        <div className="flex items-center text-sm text-gray-400">
+                          <svg
+                            className="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                            />
+                          </svg>
+                          <span className="ml-2">2</span>
+                        </div>
+                      </div>
+                      <div className="mt-3">
+                        <p className="text-sm  text-gray-800">
+                          Product illustration to symbolize bringing people
+                          together
                         </p>
-                        <span>
+                      </div>
+
+                      <div className="mt-3 flex items-center">
+                        <span className="rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover "
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
                           <img
                             className="w-6 h-6 rounded-full object-cover"
                             src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
                             alt="Avatar"
                           />
                         </span>
-                      </div>
-
-                      <div className="mt-2 flex items-baseline justify-between">
-                        <div className="text-sm text-gray-600">Sep 14</div>
-                        <div className="p-2 flex items-center bg-green-100 rounded">
-                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                            Feature Request
-                          </span>
-                        </div>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1506697084665-7f7d652308af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
                       </div>
                     </a>
                   </li>
 
-                  <li className="mt-3">
+                  <li className="mt-1">
                     <a
                       href="#"
                       className=" block p-5 rounded-md bg-white shadow"
                     >
-                      <div className="flex justify-between">
-                        <p className="text-sm font-medium text-gray-900 leading-snug">
-                          Add discount code to checkout page
+                      <div className="flex items-baseline justify-between">
+                        <div className="px-3 py-1 bg-blue-200 rounded">
+                          <span className="text-sm font-medium text-blue-500 leading-tight">
+                            DESIGN
+                          </span>
+                        </div>
+                        <div className="flex items-center text-sm text-gray-400">
+                          <svg
+                            className="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                            />
+                          </svg>
+                          <span className="ml-2">2</span>
+                        </div>
+                      </div>
+                      <div className="mt-3">
+                        <p className="text-sm  text-gray-800">
+                          Product illustration to symbolize bringing people
+                          together
                         </p>
-                        <span>
+                      </div>
+
+                      <div className="mt-3 flex items-center">
+                        <span className="rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover "
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
                           <img
                             className="w-6 h-6 rounded-full object-cover"
                             src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
                             alt="Avatar"
                           />
                         </span>
-                      </div>
-
-                      <div className="mt-2 flex items-baseline justify-between">
-                        <div className="text-sm text-gray-600">Sep 14</div>
-                        <div className="p-2 flex items-center bg-green-100 rounded">
-                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                            Feature Request
-                          </span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li className="mt-3">
-                    <a
-                      href="#"
-                      className=" block p-5 rounded-md bg-white shadow"
-                    >
-                      <div className="flex justify-between">
-                        <p className="text-sm font-medium text-gray-900 leading-snug">
-                          Add discount code to checkout page
-                        </p>
-                        <span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
                           <img
                             className="w-6 h-6 rounded-full object-cover"
-                            src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            src="https://images.unsplash.com/photo-1506697084665-7f7d652308af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
                             alt="Avatar"
                           />
                         </span>
-                      </div>
-
-                      <div className="mt-2 flex items-baseline justify-between">
-                        <div className="text-sm text-gray-600">Sep 14</div>
-                        <div className="p-2 flex items-center bg-green-100 rounded">
-                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                            Feature Request
-                          </span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li className="mt-3">
-                    <a
-                      href="#"
-                      className=" block p-5 rounded-md bg-white shadow"
-                    >
-                      <div className="flex justify-between">
-                        <p className="text-sm font-medium text-gray-900 leading-snug">
-                          Add discount code to checkout page
-                        </p>
-                        <span>
-                          <img
-                            className="w-6 h-6 rounded-full object-cover"
-                            src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                            alt="Avatar"
-                          />
-                        </span>
-                      </div>
-
-                      <div className="mt-2 flex items-baseline justify-between">
-                        <div className="text-sm text-gray-600">Sep 14</div>
-                        <div className="p-2 flex items-center bg-green-100 rounded">
-                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                            Feature Request
-                          </span>
-                        </div>
                       </div>
                     </a>
                   </li>
@@ -450,187 +392,191 @@ export default function Home() {
 
             {/* Board In Progress */}
             <div className="flex-shrink-0 flex flex-col w-80 bg-gray-100 rounded-md">
-              <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-sm font-medium text-gray-700">
-                Backlog
+              <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-md font-medium text-gray-700 leading-tight font-mono">
+                In Progress
               </h3>
               <div className=" flex-1 min-h-0 overflow-y-auto">
                 <ul className="pt-1 pb-3 px-3">
-                  <li>
+                  <li className="mt-1">
                     <a
                       href="#"
                       className=" block p-5 rounded-md bg-white shadow"
                     >
-                      <div className="flex justify-between">
-                        <p className="text-sm font-medium text-gray-900 leading-snug">
-                          Add discount code to checkout page
+                      <div className="flex items-baseline justify-between">
+                        <div className="px-3 py-1 bg-blue-200 rounded">
+                          <span className="text-sm font-medium text-blue-500 leading-tight">
+                            DESIGN
+                          </span>
+                        </div>
+                        <div className="flex items-center text-sm text-gray-400">
+                          <svg
+                            className="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                            />
+                          </svg>
+                          <span className="ml-2">2</span>
+                        </div>
+                      </div>
+                      <div className="mt-3">
+                        <p className="text-sm  text-gray-800">
+                          Product illustration to symbolize bringing people
+                          together
                         </p>
-                        <span>
+                      </div>
+
+                      <div className="mt-3 flex items-center">
+                        <span className="rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover "
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
                           <img
                             className="w-6 h-6 rounded-full object-cover"
                             src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
                             alt="Avatar"
                           />
                         </span>
-                      </div>
-
-                      <div className="mt-2 flex items-baseline justify-between">
-                        <div className="text-sm text-gray-600">Sep 14</div>
-                        <div className="p-2 flex items-center bg-green-100 rounded">
-                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                            Feature Request
-                          </span>
-                        </div>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1506697084665-7f7d652308af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
                       </div>
                     </a>
                   </li>
-
-                  <li className="mt-3">
+                  <li className="mt-1">
                     <a
                       href="#"
                       className=" block p-5 rounded-md bg-white shadow"
                     >
-                      <div className="flex justify-between">
-                        <p className="text-sm font-medium text-gray-900 leading-snug">
-                          Add discount code to checkout page
+                      <div className="flex items-baseline justify-between">
+                        <div className="px-3 py-1 bg-blue-200 rounded">
+                          <span className="text-sm font-medium text-blue-500 leading-tight">
+                            DESIGN
+                          </span>
+                        </div>
+                        <div className="flex items-center text-sm text-gray-400">
+                          <svg
+                            className="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                            />
+                          </svg>
+                          <span className="ml-2">2</span>
+                        </div>
+                      </div>
+                      <div className="mt-3">
+                        <p className="text-sm  text-gray-800">
+                          Product illustration to symbolize bringing people
+                          together
                         </p>
-                        <span>
+                      </div>
+
+                      <div className="mt-3 flex items-center">
+                        <span className="rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover "
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
                           <img
                             className="w-6 h-6 rounded-full object-cover"
                             src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
                             alt="Avatar"
                           />
                         </span>
-                      </div>
-
-                      <div className="mt-2 flex items-baseline justify-between">
-                        <div className="text-sm text-gray-600">Sep 14</div>
-                        <div className="p-2 flex items-center bg-green-100 rounded">
-                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                            Feature Request
-                          </span>
-                        </div>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1506697084665-7f7d652308af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
                       </div>
                     </a>
                   </li>
-
-                  <li className="mt-3">
+                  <li className="mt-1">
                     <a
                       href="#"
                       className=" block p-5 rounded-md bg-white shadow"
                     >
-                      <div className="flex justify-between">
-                        <p className="text-sm font-medium text-gray-900 leading-snug">
-                          Add discount code to checkout page
+                      <div className="flex items-baseline justify-between">
+                        <div className="px-3 py-1 bg-blue-200 rounded">
+                          <span className="text-sm font-medium text-blue-500 leading-tight">
+                            DESIGN
+                          </span>
+                        </div>
+                        <div className="flex items-center text-sm text-gray-400">
+                          <svg
+                            className="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                            />
+                          </svg>
+                          <span className="ml-2">2</span>
+                        </div>
+                      </div>
+                      <div className="mt-3">
+                        <p className="text-sm  text-gray-800">
+                          Product illustration to symbolize bringing people
+                          together
                         </p>
-                        <span>
+                      </div>
+
+                      <div className="mt-3 flex items-center">
+                        <span className="rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover "
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
                           <img
                             className="w-6 h-6 rounded-full object-cover"
                             src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
                             alt="Avatar"
                           />
                         </span>
-                      </div>
-
-                      <div className="mt-2 flex items-baseline justify-between">
-                        <div className="text-sm text-gray-600">Sep 14</div>
-                        <div className="p-2 flex items-center bg-green-100 rounded">
-                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                            Feature Request
-                          </span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li className="mt-3">
-                    <a
-                      href="#"
-                      className=" block p-5 rounded-md bg-white shadow"
-                    >
-                      <div className="flex justify-between">
-                        <p className="text-sm font-medium text-gray-900 leading-snug">
-                          Add discount code to checkout page
-                        </p>
-                        <span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
                           <img
                             className="w-6 h-6 rounded-full object-cover"
-                            src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            src="https://images.unsplash.com/photo-1506697084665-7f7d652308af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
                             alt="Avatar"
                           />
                         </span>
-                      </div>
-
-                      <div className="mt-2 flex items-baseline justify-between">
-                        <div className="text-sm text-gray-600">Sep 14</div>
-                        <div className="p-2 flex items-center bg-green-100 rounded">
-                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                            Feature Request
-                          </span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li className="mt-3">
-                    <a
-                      href="#"
-                      className=" block p-5 rounded-md bg-white shadow"
-                    >
-                      <div className="flex justify-between">
-                        <p className="text-sm font-medium text-gray-900 leading-snug">
-                          Add discount code to checkout page
-                        </p>
-                        <span>
-                          <img
-                            className="w-6 h-6 rounded-full object-cover"
-                            src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                            alt="Avatar"
-                          />
-                        </span>
-                      </div>
-
-                      <div className="mt-2 flex items-baseline justify-between">
-                        <div className="text-sm text-gray-600">Sep 14</div>
-                        <div className="p-2 flex items-center bg-green-100 rounded">
-                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                            Feature Request
-                          </span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li className="mt-3">
-                    <a
-                      href="#"
-                      className=" block p-5 rounded-md bg-white shadow"
-                    >
-                      <div className="flex justify-between">
-                        <p className="text-sm font-medium text-gray-900 leading-snug">
-                          Add discount code to checkout page
-                        </p>
-                        <span>
-                          <img
-                            className="w-6 h-6 rounded-full object-cover"
-                            src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
-                            alt="Avatar"
-                          />
-                        </span>
-                      </div>
-
-                      <div className="mt-2 flex items-baseline justify-between">
-                        <div className="text-sm text-gray-600">Sep 14</div>
-                        <div className="p-2 flex items-center bg-green-100 rounded">
-                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                            Feature Request
-                          </span>
-                        </div>
                       </div>
                     </a>
                   </li>
@@ -640,67 +586,313 @@ export default function Home() {
 
             {/* Board Testing */}
             <div className="flex-shrink-0 flex flex-col w-80 bg-gray-100 rounded-md">
-              <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-sm font-medium text-gray-700">
-                Backlog
+              <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-md font-medium text-gray-700 leading-tight font-mono">
+                Testing
               </h3>
               <div className=" flex-1 min-h-0 overflow-y-auto">
                 <ul className="pt-1 pb-3 px-3">
-                  <li className="mt-3">
+                  <li className="mt-1">
                     <a
                       href="#"
                       className=" block p-5 rounded-md bg-white shadow"
                     >
-                      <div className="flex justify-between">
-                        <p className="text-sm font-medium text-gray-900 leading-snug">
-                          Add discount code to checkout page
+                      <div className="flex items-baseline justify-between">
+                        <div className="px-3 py-1 bg-blue-200 rounded">
+                          <span className="text-sm font-medium text-blue-500 leading-tight">
+                            DESIGN
+                          </span>
+                        </div>
+                        <div className="flex items-center text-sm text-gray-400">
+                          <svg
+                            className="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                            />
+                          </svg>
+                          <span className="ml-2">2</span>
+                        </div>
+                      </div>
+                      <div className="mt-3">
+                        <p className="text-sm  text-gray-800">
+                          Product illustration to symbolize bringing people
+                          together
                         </p>
-                        <span>
+                      </div>
+
+                      <div className="mt-3 flex items-center">
+                        <span className="rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover "
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
                           <img
                             className="w-6 h-6 rounded-full object-cover"
                             src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
                             alt="Avatar"
                           />
                         </span>
-                      </div>
-
-                      <div className="mt-2 flex items-baseline justify-between">
-                        <div className="text-sm text-gray-600">Sep 14</div>
-                        <div className="p-2 flex items-center bg-green-100 rounded">
-                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                            Feature Request
-                          </span>
-                        </div>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1506697084665-7f7d652308af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
                       </div>
                     </a>
-                  </li>
-
-                  <li className="mt-3">
+                  </li>{" "}
+                  <li className="mt-1">
                     <a
                       href="#"
                       className=" block p-5 rounded-md bg-white shadow"
                     >
-                      <div className="flex justify-between">
-                        <p className="text-sm font-medium text-gray-900 leading-snug">
-                          Add discount code to checkout page
+                      <div className="flex items-baseline justify-between">
+                        <div className="px-3 py-1 bg-blue-200 rounded">
+                          <span className="text-sm font-medium text-blue-500 leading-tight">
+                            DESIGN
+                          </span>
+                        </div>
+                        <div className="flex items-center text-sm text-gray-400">
+                          <svg
+                            className="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                            />
+                          </svg>
+                          <span className="ml-2">2</span>
+                        </div>
+                      </div>
+                      <div className="mt-3">
+                        <p className="text-sm  text-gray-800">
+                          Product illustration to symbolize bringing people
+                          together
                         </p>
-                        <span>
+                      </div>
+
+                      <div className="mt-3 flex items-center">
+                        <span className="rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover "
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
                           <img
                             className="w-6 h-6 rounded-full object-cover"
                             src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
                             alt="Avatar"
                           />
                         </span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1506697084665-7f7d652308af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
                       </div>
-
-                      <div className="mt-2 flex items-baseline justify-between">
-                        <div className="text-sm text-gray-600">Sep 14</div>
-                        <div className="p-2 flex items-center bg-green-100 rounded">
-                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                            Feature Request
+                    </a>
+                  </li>{" "}
+                  <li className="mt-1">
+                    <a
+                      href="#"
+                      className=" block p-5 rounded-md bg-white shadow"
+                    >
+                      <div className="flex items-baseline justify-between">
+                        <div className="px-3 py-1 bg-blue-200 rounded">
+                          <span className="text-sm font-medium text-blue-500 leading-tight">
+                            DESIGN
                           </span>
                         </div>
+                        <div className="flex items-center text-sm text-gray-400">
+                          <svg
+                            className="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                            />
+                          </svg>
+                          <span className="ml-2">2</span>
+                        </div>
+                      </div>
+                      <div className="mt-3">
+                        <p className="text-sm  text-gray-800">
+                          Product illustration to symbolize bringing people
+                          together
+                        </p>
+                      </div>
+
+                      <div className="mt-3 flex items-center">
+                        <span className="rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover "
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1506697084665-7f7d652308af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                      </div>
+                    </a>
+                  </li>{" "}
+                  <li className="mt-1">
+                    <a
+                      href="#"
+                      className=" block p-5 rounded-md bg-white shadow"
+                    >
+                      <div className="flex items-baseline justify-between">
+                        <div className="px-3 py-1 bg-blue-200 rounded">
+                          <span className="text-sm font-medium text-blue-500 leading-tight">
+                            DESIGN
+                          </span>
+                        </div>
+                        <div className="flex items-center text-sm text-gray-400">
+                          <svg
+                            className="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                            />
+                          </svg>
+                          <span className="ml-2">2</span>
+                        </div>
+                      </div>
+                      <div className="mt-3">
+                        <p className="text-sm  text-gray-800">
+                          Product illustration to symbolize bringing people
+                          together
+                        </p>
+                      </div>
+
+                      <div className="mt-3 flex items-center">
+                        <span className="rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover "
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1506697084665-7f7d652308af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                      </div>
+                    </a>
+                  </li>{" "}
+                  <li className="mt-1">
+                    <a
+                      href="#"
+                      className=" block p-5 rounded-md bg-white shadow"
+                    >
+                      <div className="flex items-baseline justify-between">
+                        <div className="px-3 py-1 bg-blue-200 rounded">
+                          <span className="text-sm font-medium text-blue-500 leading-tight">
+                            DESIGN
+                          </span>
+                        </div>
+                        <div className="flex items-center text-sm text-gray-400">
+                          <svg
+                            className="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                            />
+                          </svg>
+                          <span className="ml-2">2</span>
+                        </div>
+                      </div>
+                      <div className="mt-3">
+                        <p className="text-sm  text-gray-800">
+                          Product illustration to symbolize bringing people
+                          together
+                        </p>
+                      </div>
+
+                      <div className="mt-3 flex items-center">
+                        <span className="rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover "
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1506697084665-7f7d652308af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
                       </div>
                     </a>
                   </li>
@@ -710,97 +902,130 @@ export default function Home() {
 
             {/* Board Done */}
             <div className="flex-shrink-0 flex flex-col w-80 bg-gray-100 rounded-md">
-              <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-sm font-medium text-gray-700">
-                Backlog
+              <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-md font-medium text-gray-700 leading-tight font-mono">
+                Done
               </h3>
               <div className=" flex-1 min-h-0 overflow-y-auto">
                 <ul className="pt-1 pb-3 px-3">
-                  <li className="mt-3">
+                  <li className="mt-1">
                     <a
                       href="#"
                       className=" block p-5 rounded-md bg-white shadow"
                     >
-                      <div className="flex justify-between">
-                        <p className="text-sm font-medium text-gray-900 leading-snug">
-                          Add discount code to checkout page
+                      <div className="flex items-baseline justify-between">
+                        <div className="px-3 py-1 bg-blue-200 rounded">
+                          <span className="text-sm font-medium text-blue-500 leading-tight">
+                            DESIGN
+                          </span>
+                        </div>
+                        <div className="flex items-center text-sm text-gray-400">
+                          <svg
+                            className="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                            />
+                          </svg>
+                          <span className="ml-2">2</span>
+                        </div>
+                      </div>
+                      <div className="mt-3">
+                        <p className="text-sm  text-gray-800">
+                          Product illustration to symbolize bringing people
+                          together
                         </p>
-                        <span>
+                      </div>
+
+                      <div className="mt-3 flex items-center">
+                        <span className="rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover "
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
                           <img
                             className="w-6 h-6 rounded-full object-cover"
                             src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
                             alt="Avatar"
                           />
                         </span>
-                      </div>
-
-                      <div className="mt-2 flex items-baseline justify-between">
-                        <div className="text-sm text-gray-600">Sep 14</div>
-                        <div className="p-2 flex items-center bg-green-100 rounded">
-                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                            Feature Request
-                          </span>
-                        </div>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover"
+                            src="https://images.unsplash.com/photo-1506697084665-7f7d652308af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
                       </div>
                     </a>
-                  </li>
-
-                  <li className="mt-3">
+                  </li>{" "}
+                  <li className="mt-1">
                     <a
                       href="#"
                       className=" block p-5 rounded-md bg-white shadow"
                     >
-                      <div className="flex justify-between">
-                        <p className="text-sm font-medium text-gray-900 leading-snug">
-                          Add discount code to checkout page
+                      <div className="flex items-baseline justify-between">
+                        <div className="px-3 py-1 bg-blue-200 rounded">
+                          <span className="text-sm font-medium text-blue-500 leading-tight">
+                            DESIGN
+                          </span>
+                        </div>
+                        <div className="flex items-center text-sm text-gray-400">
+                          <svg
+                            className="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                            />
+                          </svg>
+                          <span className="ml-2">2</span>
+                        </div>
+                      </div>
+                      <div className="mt-3">
+                        <p className="text-sm  text-gray-800">
+                          Product illustration to symbolize bringing people
+                          together
                         </p>
-                        <span>
+                      </div>
+
+                      <div className="mt-3 flex items-center">
+                        <span className="rounded-full border-2 border-white">
+                          <img
+                            className="w-6 h-6 rounded-full object-cover "
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            alt="Avatar"
+                          />
+                        </span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
                           <img
                             className="w-6 h-6 rounded-full object-cover"
                             src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
                             alt="Avatar"
                           />
                         </span>
-                      </div>
-
-                      <div className="mt-2 flex items-baseline justify-between">
-                        <div className="text-sm text-gray-600">Sep 14</div>
-                        <div className="p-2 flex items-center bg-green-100 rounded">
-                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                            Feature Request
-                          </span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li className="mt-3">
-                    <a
-                      href="#"
-                      className=" block p-5 rounded-md bg-white shadow"
-                    >
-                      <div className="flex justify-between">
-                        <p className="text-sm font-medium text-gray-900 leading-snug">
-                          Add discount code to checkout page
-                        </p>
-                        <span>
+                        <span className="-ml-2.5 rounded-full border-2 border-white">
                           <img
                             className="w-6 h-6 rounded-full object-cover"
-                            src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                            src="https://images.unsplash.com/photo-1506697084665-7f7d652308af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
                             alt="Avatar"
                           />
                         </span>
-                      </div>
-
-                      <div className="mt-2 flex items-baseline justify-between">
-                        <div className="text-sm text-gray-600">Sep 14</div>
-                        <div className="p-2 flex items-center bg-green-100 rounded">
-                          <span className="block w-2 h-2 border border-green-400 bg-green-400 rounded-full" />
-                          <span className="ml-2 text-sm font-medium text-green-500 leading-tight">
-                            Feature Request
-                          </span>
-                        </div>
                       </div>
                     </a>
                   </li>
