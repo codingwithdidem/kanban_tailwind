@@ -79,7 +79,7 @@ export default function Home() {
               className="flex justify-between items-center rounded-lg px-3 py-2"
             >
               <span className="text-sm font-medium text-gray-700">
-                Feature Request
+                New Feature
               </span>
             </a>
             <a
@@ -94,21 +94,21 @@ export default function Home() {
               href="#"
               className="flex justify-between items-center rounded-lg px-3 py-2"
             >
-              <span className="text-sm font-medium text-gray-700">v2.0</span>
+              <span className="text-sm font-medium text-gray-700">Design</span>
             </a>
             <a
               href="#"
               className="flex justify-between items-center rounded-lg px-3 py-2"
             >
               <span className="text-sm font-medium text-gray-700">
-                Enhancement
+                Research
               </span>
             </a>
             <a
               href="#"
               className="flex justify-between items-center rounded-lg px-3 py-2"
             >
-              <span className="text-sm font-medium text-gray-700">Design</span>
+              <span className="text-sm font-medium text-gray-700">Overdue</span>
             </a>
           </div>
         </nav>
@@ -331,9 +331,9 @@ export default function Home() {
                       className=" block p-5 rounded-md bg-white shadow"
                     >
                       <div className="flex items-baseline justify-between">
-                        <div className="px-3 py-1 bg-blue-200 rounded">
-                          <span className="text-sm font-medium text-blue-500 leading-tight">
-                            DESIGN
+                        <div className="px-3 py-1 bg-red-200 rounded">
+                          <span className="text-sm font-medium text-red-500 leading-tight">
+                            BUG
                           </span>
                         </div>
                         <div className="flex items-center text-sm text-gray-400">
@@ -403,9 +403,9 @@ export default function Home() {
                       className=" block p-5 rounded-md bg-white shadow"
                     >
                       <div className="flex items-baseline justify-between">
-                        <div className="px-3 py-1 bg-blue-200 rounded">
-                          <span className="text-sm font-medium text-blue-500 leading-tight">
-                            DESIGN
+                        <div className="px-3 py-1 bg-pink-200 rounded">
+                          <span className="text-sm font-medium text-pink-500 leading-tight">
+                            RESEARCH
                           </span>
                         </div>
                         <div className="flex items-center text-sm text-gray-400">
@@ -525,9 +525,9 @@ export default function Home() {
                       className=" block p-5 rounded-md bg-white shadow"
                     >
                       <div className="flex items-baseline justify-between">
-                        <div className="px-3 py-1 bg-blue-200 rounded">
-                          <span className="text-sm font-medium text-blue-500 leading-tight">
-                            DESIGN
+                        <div className="px-3 py-1 bg-green-200 rounded">
+                          <span className="text-sm font-medium text-green-500 leading-tight">
+                            NEW FEATURE
                           </span>
                         </div>
                         <div className="flex items-center text-sm text-gray-400">
@@ -719,9 +719,9 @@ export default function Home() {
                       className=" block p-5 rounded-md bg-white shadow"
                     >
                       <div className="flex items-baseline justify-between">
-                        <div className="px-3 py-1 bg-blue-200 rounded">
-                          <span className="text-sm font-medium text-blue-500 leading-tight">
-                            DESIGN
+                        <div className="px-3 py-1 bg-purple-200 rounded">
+                          <span className="text-sm font-medium text-purple-500 leading-tight">
+                            MARKETING
                           </span>
                         </div>
                         <div className="flex items-center text-sm text-gray-400">
@@ -841,9 +841,9 @@ export default function Home() {
                       className=" block p-5 rounded-md bg-white shadow"
                     >
                       <div className="flex items-baseline justify-between">
-                        <div className="px-3 py-1 bg-blue-200 rounded">
-                          <span className="text-sm font-medium text-blue-500 leading-tight">
-                            DESIGN
+                        <div className="px-3 py-1 bg-yellow-200 rounded">
+                          <span className="text-sm font-medium text-yellow-500 leading-tight">
+                            OVERDUE
                           </span>
                         </div>
                         <div className="flex items-center text-sm text-gray-400">
