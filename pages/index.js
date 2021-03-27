@@ -44,7 +44,7 @@ export default function Home() {
               className="flex justify-between items-center rounded-lg px-3 py-2"
             >
               <span className="text-sm font-medium text-gray-700">Backlog</span>
-              <span className="text-xs font-semibold text-gray-700">36</span>
+              <span className="text-xs font-semibold text-gray-700">23</span>
             </a>
             <a
               href="#"
@@ -53,14 +53,14 @@ export default function Home() {
               <span className="text-sm font-medium text-white">
                 Active Sprints
               </span>
-              <span className="text-xs font-semibold text-white">2</span>
+              <span className="text-xs font-semibold text-white">1</span>
             </a>
             <a
               href="#"
               className="flex justify-between items-center rounded-lg px-3 py-2"
             >
               <span className="text-sm font-medium text-gray-700">Reports</span>
-              <span className="text-xs font-semibold text-gray-700">1</span>
+              <span className="text-xs font-semibold text-gray-700">13</span>
             </a>
           </div>
 
@@ -193,9 +193,7 @@ export default function Home() {
             {/* Header Bottom */}
             <div className=" flex items-center justify-between py-2">
               <div className="sm:flex sm:items-center">
-                <h2 className="text-xl font-semibold text-gray-900 leading-tight">
-                  Assignees
-                </h2>
+                <h2 className="text-lg font-medium text-gray-900">Assignees</h2>
                 <div className="flex items-center sm:ml-6 mt-1 sm:mt-0">
                   <span className="rounded-full border-2 border-white">
                     <img
@@ -255,9 +253,9 @@ export default function Home() {
           </header>
         </div>
 
-        <div className="flex-1 overflow-auto">
+        <div className="flex-1 overflow-auto bg-gray-50">
           <main className="p-3 h-full overflow-hidden inline-flex space-x-2">
-            <div className="flex-shrink-0 flex flex-col w-80 bg-gray-100 rounded-md">
+            <div className="flex-shrink-0 flex flex-col w-80 bg-transparent rounded-md">
               <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-md font-medium text-gray-700 leading-tight font-mono">
                 Todo
               </h3>
@@ -391,7 +389,7 @@ export default function Home() {
             </div>
 
             {/* Board In Progress */}
-            <div className="flex-shrink-0 flex flex-col w-80 bg-gray-100 rounded-md">
+            <div className="flex-shrink-0 flex flex-col w-80 bg-transparent rounded-md">
               <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-md font-medium text-gray-700 leading-tight font-mono">
                 In Progress
               </h3>
@@ -428,8 +426,7 @@ export default function Home() {
                       </div>
                       <div className="mt-3">
                         <p className="text-sm  text-gray-800">
-                          Product illustration to symbolize bringing people
-                          together
+                          Update brand guidelines and create a design system.
                         </p>
                       </div>
 
@@ -489,8 +486,7 @@ export default function Home() {
                       </div>
                       <div className="mt-3">
                         <p className="text-sm  text-gray-800">
-                          Product illustration to symbolize bringing people
-                          together
+                          Think of a better way to show projects on website
                         </p>
                       </div>
 
@@ -585,7 +581,7 @@ export default function Home() {
             </div>
 
             {/* Board Testing */}
-            <div className="flex-shrink-0 flex flex-col w-80 bg-gray-100 rounded-md">
+            <div className="flex-shrink-0 flex flex-col w-80 bg-transparent rounded-md">
               <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-md font-medium text-gray-700 leading-tight font-mono">
                 Testing
               </h3>
@@ -866,8 +862,7 @@ export default function Home() {
                       </div>
                       <div className="mt-3">
                         <p className="text-sm  text-gray-800">
-                          Product illustration to symbolize bringing people
-                          together
+                          Renew Sketch License for the team
                         </p>
                       </div>
 
@@ -901,7 +896,7 @@ export default function Home() {
             </div>
 
             {/* Board Done */}
-            <div className="flex-shrink-0 flex flex-col w-80 bg-gray-100 rounded-md">
+            <div className="flex-shrink-0 flex flex-col w-80 bg-transparent rounded-md">
               <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-md font-medium text-gray-700 leading-tight font-mono">
                 Done
               </h3>
