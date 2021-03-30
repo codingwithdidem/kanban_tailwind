@@ -191,7 +191,7 @@ export default function Home() {
             </div>
 
             {/* Header Bottom */}
-            <div className=" flex items-center justify-between py-2">
+            <div className="flex items-center justify-between py-2">
               <div className="sm:flex sm:items-center">
                 <h2 className="text-lg font-medium text-gray-900">Assignees</h2>
                 <div className="flex items-center sm:ml-6 mt-1 sm:mt-0">
@@ -255,7 +255,7 @@ export default function Home() {
 
         <div className="bg-gray-50">
           <main className="p-3 h-full overflow-hidden inline-flex flex flex-wrap mx-1">
-            <div className="flex-shrink-0 flex flex-col bg-transparent rounded-md px-1 sm:w-1/2 md:w-1/3 lg:w-1/4 lg:my-4 lg:px-4">
+            <div className="flex flex-col bg-transparent rounded-md px-1 sm:w-1/2 md:w-1/3 lg:w-1/4 lg:my-4 lg:px-4">
               <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-md font-medium text-gray-700 leading-tight font-mono">
                 Todo
               </h3>
@@ -449,7 +449,7 @@ export default function Home() {
             </div>
 
             {/* Board In Progress */}
-            <div className="flex-shrink-0 flex flex-col bg-transparent rounded-md px-1 sm:w-1/2 md:w-1/3 lg:w-1/4 lg:my-4 lg:px-4">
+            <div className="flex flex-col bg-transparent rounded-md px-1 sm:w-1/2 md:w-1/3 lg:w-1/4 lg:my-4 lg:px-4">
               <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-md font-medium text-gray-700 leading-tight font-mono">
                 In Progress
               </h3>
@@ -646,7 +646,7 @@ export default function Home() {
             </div>
 
             {/* Board Testing */}
-            <div className="flex-shrink-0 flex flex-col bg-transparent rounded-md px-1 sm:w-1/2 md:w-1/3 lg:w-1/4 lg:my-4 lg:px-4">
+            <div className="flex flex-col bg-transparent rounded-md px-1 sm:w-1/2 md:w-1/3 lg:w-1/4 lg:my-4 lg:px-4">
               <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-md font-medium text-gray-700 leading-tight font-mono">
                 Testing
               </h3>
@@ -777,7 +777,7 @@ export default function Home() {
             </div>
 
             {/* Board Done */}
-            <div className="flex-shrink-0 flex flex-col bg-transparent rounded-md px-1 sm:w-1/2 md:w-1/3 lg:w-1/4 lg:my-4 lg:px-4 h-screen">
+            <div className="flex flex-col bg-transparent rounded-md px-1 sm:w-1/2 md:w-1/3 lg:w-1/4 lg:my-4 lg:px-4 h-screen">
               <h3 className="flex-shrink-0 px-3 pt-3 pb-1 text-md font-medium text-gray-700 leading-tight font-mono">
                 Done
               </h3>
