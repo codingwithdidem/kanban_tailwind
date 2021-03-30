@@ -2,4 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+#board-scroll::-webkit-scrollbar {
+    width: 4px;
+    cursor: pointer;
+
+}
+#board-scroll::-webkit-scrollbar-track {
+    cursor: pointer;
+}
+#board-scroll::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color: #a0aec0;
+}
 
